@@ -30,7 +30,8 @@ const allowedOrigins = [
   "http://localhost:5173", 
   "https://yourdomain.com",
   "https://www.yourdomain.com",
-  "https://yourproject.vercel.app"
+  "https://yourproject.vercel.app",
+  "https://lms-deploy-project-r7ydvjc0a-sashi2809s-projects.vercel.app"
 ];
 
 app.use(

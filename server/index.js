@@ -26,23 +26,23 @@ const PORT = process.env.PORT || 3000;
 //default middleware
 app.use(express.json());
 app.use(cookieParser());
+
+// const allowedOrigins = [
+//   "http://localhost:5173", 
+//   "https://lms-deploy-project-98fo.vercel.app"
+// ];
 const allowedOrigins = [
-  "http://localhost:5173", 
+  "http://localhost:5173",
   "https://lms-deploy-project-98fo.vercel.app"
 ];
 
 app.use(
   cors({
-    origin: function(origin, callback){
-      if(!origin || allowedOrigins.includes(origin)){
-        callback(null, true)
-      }else{
-        callback(new Error("Not allowed by CORS"))
-      }
-    },
+    origin: allowedOrigins,
     credentials: true
   })
 );
+
 //apis
 app.use("/api/v1/media", mediaRoute);
 app.use("/api/v1/user", userRoute);

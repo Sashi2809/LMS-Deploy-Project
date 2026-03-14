@@ -19,7 +19,7 @@ async function roadmap(topic, difficulty, numQuestions) {
             throw new Error("GROQ_API_KEY is missing in environment variables");
           }
       const chatCompletion = await groq.chat.completions.create({
-        model: "meta-llama/llama-4-maverick-17b-128e-instruct",
+        model: "meta-llama/llama-4-scout-17b-16e-instruct",
         messages: [{
           role: "system",
           content: `You are an expert learning roadmap generator . Create a ${difficulty}-level ${numQuestions}-day learning roadmap for mastering ${topic}. if any other topic not related to learning or study give response as give releavant roadmap topic to generate

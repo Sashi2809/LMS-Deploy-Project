@@ -29,7 +29,7 @@ const generateQuestions = async (domain, technology) => {
     const response = await axios.post(
       GROQ_URL,
       {
-        model: "meta-llama/llama-4-maverick-17b-128e-instruct",
+        model: "meta-llama/llama-4-scout-17b-16e-instruct",
         messages: [{ role: "user", content: prompt }],
         temperature: 0.7,
       },
@@ -77,7 +77,7 @@ const evaluateAnswer = async (question, answer) => {
       const response = await axios.post(
         GROQ_URL,
         {
-          model: "llama3-8b-8192",
+          model: "meta-llama/llama-4-scout-17b-16e-instruct",
           messages: [{ role: "user", content: prompt }],
           temperature: 0.5,
         },

@@ -4,3 +4,9 @@ dist
 build
 __pycache__
 *.pyc
+
+
+# next time when change code and add to git, use these commands
+# git add .
+# git commit -m "updated feature"
+# git push

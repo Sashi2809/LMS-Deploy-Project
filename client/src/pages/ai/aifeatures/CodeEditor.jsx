@@ -27,7 +27,7 @@ const CodeEditor = () => {
   const runCode = async () => {
     setOutput("Running...");
     try {
-      const response = await axios.post("http://localhost:8080/api/v1/code/run/", {
+      const response = await axios.post("hhttps://lms-backend-7dwz.onrender.com/api/v1/code/run/", {
         code,
         language,
       });

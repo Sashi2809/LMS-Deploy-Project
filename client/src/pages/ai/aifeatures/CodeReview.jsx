@@ -22,7 +22,7 @@ function CodeReview() {
   async function reviewCode() {
     setIsLoading(true);
     try {
-      const response = await axios.post("http://localhost:8080/api/v1/ai/get-review/", { code });
+      const response = await axios.post("https://lms-backend-7dwz.onrender.com/api/v1/ai/get-review/", { code });
       setReview(response.data.response || "No review available");
     } catch (error) {
       console.error("Error fetching review:", error);

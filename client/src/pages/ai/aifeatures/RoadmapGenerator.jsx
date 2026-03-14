@@ -15,7 +15,7 @@ function RoadmapGenerator() {
     setIsLoading(true);
     
     try {
-      const response = await axios.post("http://localhost:8080/api/v1/roadmap/generate-roadmap", {
+      const response = await axios.post("https://lms-backend-7dwz.onrender.com/api/v1/roadmap/generate-roadmap", {
         topic,
         difficulty,
         numQuestions: Number(numQuestions)

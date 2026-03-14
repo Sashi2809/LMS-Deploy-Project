@@ -59,3 +59,9 @@ app.listen(PORT, () => {
   console.log(`Server listen at port ${PORT}`);
 });
 
+app.get("/", (req, res) => {
+  res.json({
+    status: "success",
+    message: "LMS Backend API is running 🚀"
+  });
+});

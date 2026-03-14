@@ -28,7 +28,7 @@ app.use(express.json());
 app.use(cookieParser());
 const allowedOrigins = [
   "http://localhost:5173", 
-  "https://lms-deploy-project-98fo.vercel.app/"
+  "https://lms-deploy-project-98fo.vercel.app"
 ];
 
 app.use(

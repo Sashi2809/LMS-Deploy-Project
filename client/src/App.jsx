@@ -34,7 +34,7 @@ import RoadmapGenerator from "./pages/ai/aifeatures/RoadmapGenerator";
 import CodeEditor from "./pages/ai/aifeatures/CodeEditor";
 import ContactUs from "./pages/student/ContactUs";
 
-axios.defaults.baseURL = "http://localhost:8080";
+axios.defaults.baseURL = "https://lms-backend-7dwz.onrender.com";
 axios.defaults.withCredentials = true;
 
 

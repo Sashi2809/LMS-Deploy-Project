@@ -10,7 +10,7 @@ import LoadingSpinner from "./components/LoadingSpinner";
 
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:8080";
+axios.defaults.baseURL = "https://lms-backend-7dwz.onrender.com";
 axios.defaults.withCredentials = true;
 
 const Custom = ({children}) => {
